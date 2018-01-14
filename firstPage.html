@@ -11,6 +11,60 @@
     <h2> This is a heading!</h2>
     <h6> This is another heading!</h6>
 
+    <p>Do you like dogs or cats?</p>
+    <form>
+      <label for=dogs>Dogs:</label>
+      <input name="petChoice" id=dogs type="radio" value="DOGS"> <!-- adding the name attribute to both dog & cat input will connect them -->
+
+      <label for=cats>Cats:</label>
+      <input name="petChoice" id=cats type="radio" value="CATS">
+
+      <p>What is your favorite color?</p>
+
+      <select name="MOOD"> <!-- select tag is a dropdown menu -->
+        <option value="happy">:)</option>  <!-- needs a option tag for every choice  -->
+        <option value="neutral">:|</option> <!-- value attribute adds naming to the url -->
+        <option value="sad">:(</option>
+      </select>
+
+      <textarea rows="10" cols="50"></textarea> <!-- creates a text box where users can type -->
+
+      <button>Go!</button>
+    </form>
+
+    <h1>Sign In</h1>
+    <!-- action: URL address
+    method: HTTP method (pull/get) -->
+    <form action="http://wikipedia.org" method="get">  <!-- form tag requires the action and method attribute -->
+      <label for="Email">Email:</label> <!-- for & id require when connecting labels to input -->
+      <!-- adding a required attribute will set it as a rule that you will need before sumitting -->
+      <input id="Email" type="email" placeholder="Email" required> <!-- forms require input tags with different types -->
+
+      <label for="password">Password:</label>
+      <input id="password" type="password" placeholder="Password" required> <!-- placeholders places dim text  -->
+
+      <input type="submit">
+    </form>
+
+    <table>
+      <thead> <!-- contains the table header -->
+        <tr>
+          <th>Name</th> <!-- table header (bold) -->
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody> <!-- contains the content of the table -->
+        <tr>  <!-- table row -->
+          <td>Ace</td>  <!-- table data for each table cell -->
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Clover</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+
     <!-- the img tag does not need a closing tag
     attributes are named followed by a value EX. <tag name="value"></tag> -->
     <img src="https://vetstreet.brightspotcdn.com/dims4/default/79f1bd2/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F83%2F9e8de0a7f411e0a0d50050568d634f%2Ffile%2FPembroke-Welsh-Corgi-3-645mk62711.jpg">

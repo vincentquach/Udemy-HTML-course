@@ -1,0 +1,24 @@
+Gives color to the background
+h4 {
+  background: #FF9933
+}
+-------------------------------------------------------------------
+Background Image
+body {
+  background: url("insert URL");
+  background-repeat: no-repeat; <----- does not repeat the background image
+  background-size: cover; <-------------- covers the entire page if the image is small
+}
+---------------------------------------------------------------------------------------
+Borders
+Must contain color, width, and style
+body {
+  border-color: "color";
+  border-width: "size in px";
+  border-style: "style type";
+}
+
+Can also do it like this:
+body {
+  border: purple 10px solid;
+}

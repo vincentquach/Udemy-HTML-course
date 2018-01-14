@@ -1,0 +1,23 @@
+/* Traditional way to style multiple tags in CSS
+selector {
+  property: value;
+}     */
+
+h1 {
+  color: #FF5700;
+  border-color: Gray;
+  border-width: 10px;
+  border-style: dotted;
+}
+
+li {
+  color: blue;
+  border: 7px solid #FFAAFF;
+
+}
+
+body {
+  background: url(https://image.freepik.com/free-photo/blue-sky-with-clouds_1127-282.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

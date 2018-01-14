@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form>
+      <label for="firstName">First name:</label>
+      <input name="First" id="firstName" type="text" placeholder="John" required>
+      <label for="lastName">Last name:</label>
+      <input name="Last" id="lastNam"e type="text" placeholder="Doe" required>
+
+      <div>
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" value="Male" name="Gender" required>
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" value="Female" name="Gender" required>
+        <label for="Other">Other</label>
+        <input type="radio" id="Other" value="Other" name="Gender" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="Email" required>
+        <label for="password">Password:</label>
+        <!-- pattern attribute sets a min and max value -->
+        <!-- required title attribute is the error message -->
+        <input id="password" type="password" name="Password" pattern=".{5,10}" required title="Must be between 5 to 10 characters" required>
+      </div>
+
+      <div>
+        <label name="birthday">Birthday:</label>
+        <select name="month" required>  <!-- add the required attribute in the select tag and add an empty value in the first option to give a validation -->
+          <option  value=""selected disabled>Month</option> <!-- selected disabled attribute disable the option from being picked -->
+          <option>January</option>
+          <option>Febuary</option>
+          <option>March</option>
+        </select>
+        <select name="day" required>
+          <option value="" selected disabled>Day</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <select name="year" required>
+          <option value="" selected disabled>Year</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="agreement">I agree to the terms and conditions</label>
+        <input id="agreement" type="checkbox" name="Agreement" required>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
