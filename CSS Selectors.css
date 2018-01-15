@@ -31,3 +31,36 @@ In CSS file you call on class with .
 .special {
   color: red;
 }
+---------------------------------------------------------------------------------
+Star Selector: select all elements on the page
+*{
+  border: 1px solid blue;
+}
+--------------------------------------------------------------------------------
+Descendant Selector: chain 2 elements
+
+Selects every anchor tag within a li tag
+li a {
+  color: blue;
+}
+--------------------------------------------------------------------------------
+Adjacent Selector: select the same elements next to each other
+
+Selects all ul after a h4
+h4 + ul {
+  color: blue;
+}
+--------------------------------------------------------------------------------
+Attribute Selctor: select all same attributes
+
+Select all anchor tags with google link
+a[href="http://www.google.com"] {
+  background: green;
+}
+--------------------------------------------------------------------------------
+nth of type Selector
+
+Selects every 3rd li 
+li:nth-of-type(3) {
+  background: blue;
+}
